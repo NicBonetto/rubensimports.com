@@ -5,6 +5,13 @@
   "repository": "https://github.com/NicBonetto/rubensimports.com.git",
   "author": "Nic Bonetto <nick.bonetto@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "watch:client": "webpack --watch",
+    "server": "go run main.go",
+    "dev": "watch:client && server",
+    "build": "webpack && server"
+  },
   "dependencies": {
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
