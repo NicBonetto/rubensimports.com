@@ -3,6 +3,7 @@ package main
 import (
   "github.com/NicBonetto/rubensimports.com/server/utils/env"
   "github.com/labstack/echo"
+  "github.com/labstack/echo/middleware"
   "os"
 )
 
@@ -10,7 +11,11 @@ func main() {
   env.SetEnvVars()
 
   e := echo.New()
-  e.File("/", "server/static/index.html")
+  e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
+    Root: "server/static",
+    Index: "index.html",
+    HTML5: true,
+  }))
   
   e.Logger.Fatal(e.Start(os.Getenv("PORT")))
 }
