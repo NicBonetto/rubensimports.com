@@ -7,10 +7,9 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "watch:client": "webpack --watch",
-    "server": "go run main.go",
-    "dev": "watch:client && server",
-    "build": "webpack && server"
+    "webpack": "webpack",
+    "server": "go run server/main.go",
+    "dev": "yarn webpack && yarn server"
   },
   "dependencies": {
     "react": "^16.1.0",
