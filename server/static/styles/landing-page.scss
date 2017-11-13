@@ -1,5 +1,10 @@
-$body-bg: transparent;
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
 
+// Variables
+$body-bg: transparent;
+$light-text-color: rgba(230, 230, 230, 1);
+
+// Mixins
 @mixin background-size($size) {
   background-size: $size;
   -webkit-background-size: $size;
@@ -7,8 +12,16 @@ $body-bg: transparent;
   -o-background-size: $size;
 }
 
+//Classes
+.light-text {
+  color: $light-text-color;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+// Ids
 #landing::before {
-  
   display: block;
   background-image: url('../images/mercedes-car.jpg');
   @include background-size(cover);
@@ -27,4 +40,8 @@ $body-bg: transparent;
   height: 100vh;
   position: relative;
   overflow: hidden;
+}
+
+#landing-header {
+  margin-top: 40vh;
 }
