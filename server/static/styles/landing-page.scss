@@ -1,0 +1,30 @@
+$body-bg: transparent;
+
+@mixin background-size($size) {
+  background-size: $size;
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+}
+
+#landing::before {
+  
+  display: block;
+  background-image: url('../images/mercedes-car.jpg');
+  @include background-size(cover);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+#landing {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
