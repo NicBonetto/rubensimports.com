@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro:300,400');
 
 // Variables
 $body-bg: transparent;
 $light-text-color: rgba(230, 230, 230, 1);
+$nav-bar-color: rgba(0, 0, 0, 0.7);
+$nav-item-color: rgba(196, 204, 220, 1);
 
 // Mixins
 @mixin background-size($size) {
@@ -20,7 +22,31 @@ $light-text-color: rgba(230, 230, 230, 1);
   letter-spacing: 1px;
 }
 
-// Ids
+.landing-nav-item {
+  margin-right: 1%;
+  margin-left: 1%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+
+  a {
+    color: $nav-item-color;
+  }
+
+  a:visited {
+    color: $nav-item-color;
+  }
+
+  a:hover {
+    color: #b3d1ff;
+  }
+}
+
+// IDs
 #landing::before {
   display: block;
   background-image: url('../images/mercedes-car.jpg');
@@ -44,4 +70,40 @@ $light-text-color: rgba(230, 230, 230, 1);
 
 #landing-header {
   margin-top: 40vh;
+}
+
+#landing-nav {
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 75px;
+  @include background-size(cover);
+  background-color: $nav-bar-color;
+  position: fixed;
+  z-index: 2;
+}
+
+#landing-nav-items {
+  margin-top: 37px;
+  margin-right: 8vw;
+  min-width: 350px;
+}
+
+#logo {
+  margin-top: 5px;
+  display: inline-block;
+
+  img {
+    max-height: 57px;
+    max-width: 205px;
+  }
+}
+
+//General Elements
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
 }
