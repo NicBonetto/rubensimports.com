@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import Store from './store'
 import App from './components/app.jsx'
-require('../server/static/styles/landing-page.scss')
+import '../server/static/styles/landing-page.scss'
 
 render (
   <App/>,
