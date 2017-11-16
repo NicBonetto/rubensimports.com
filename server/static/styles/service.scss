@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro:300,400');
+
+$body-bg: transparent;
+$dark-text-color: rgba(0, 0, 0, 1);
+
+@mixin background-size($size) {
+    background-size: $size;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+}
+
+@keyframes changeBackground {
+  100% {
+    background-color: rgba(0, 0, 0, 0.9);
+  } 
+}
+
+.fade-dark:hover {
+  animation: changeBackground 2s 1 alternate ease-out forwards;
+
+  .dark-text {
+    color: rgba(245, 245, 245, 1);
+  }
+}
+
+.fade-dark {
+  height: 20vh;
+}
+
+.dark-text {
+  color: $dark-text-color;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.services-text {
+  margin-top: 10vh;
+
+  > h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+#service-description::before {
+  content: '';
+  display: block;
+  background-image: url('../images/benz-service.jpg');
+  @include background-size(cover);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+#service-description {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#service-header {
+  margin-top: 13vh;
+  margin-left: 27vw;
+  width: 40vw;
+}
