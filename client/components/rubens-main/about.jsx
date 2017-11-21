@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import NavBar from './landing-navbar.jsx'
+import History from './history.jsx'
+import MeetUs from './meet-team.jsx'
 
 class About extends Component {
   render () {
     return (
-      <section>
+      <section className="container-fluid">
         <NavBar/>
         <div id="about">
           <div className="row">
@@ -25,6 +27,8 @@ class About extends Component {
             </div>
           </div>
         </div>
+        <History/>
+        <MeetUs/>
       </section>
     )
   }
