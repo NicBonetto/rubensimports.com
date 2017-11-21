@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto:300,400');
+
+$grey: rgba(120, 120, 120, 1);
+
+@mixin TranslateY($translation) {
+  transform: translateY($translation);
+  -webkit-transform: translateY($translation);
+  -moz-transform: translateY($translation);
+  -o-transform: translateY($translation);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    @include TranslateY(0);
+  }
+  40% {
+    @include TranslateY(-30px);
+  }
+  60% {
+    @include TranslateY(-15px);
+  }
+}
+
+.heading-text {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.greet-text {
+  margin-top: 35vh;
+}
+
+.bouncing {
+  animation: bounce 1.5s 1;
+  animation-delay: 4s;
+}
+
+.title-text {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-top: 9vh;
+}
+
+.par-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $grey;
+}
+
+#about {
+  height: 100vh;
+}
+
+#welcome {
+  opacity: 0;
+  animation: fadeIn 2s 1 forwards;
+}
+
+#story {
+  opacity: 0;
+  animation: fadeIn 2s 1 forwards;
+  animation-delay: 1.5s;
+}
+
+#chev-container {
+  width: 2%;
+  margin: 0 auto;
+}
+
+#chevron-down {
+  height: 40px;
+  width: 40px;
+  margin-top: 39vh;
+  opacity: 0;
+  animation: fadeIn 2s 1 forwards;
+  animation-delay: 3s;
+  background-image: url('../images/chevron-down.png');
+  background-size: contain;
+}
