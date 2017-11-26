@@ -6,6 +6,7 @@ import App from './components/app.jsx'
 import '../server/static/styles/landing-page.scss'
 import '../server/static/styles/service.scss'
 import '../server/static/styles/about.scss'
+import '../server/static/styles/contact.scss'
 
 render (
   <App/>,

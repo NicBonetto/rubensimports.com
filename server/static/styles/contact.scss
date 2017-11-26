@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400,500,600');
+
+.contact-header {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.contact-titles {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.title-spacing {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.inline-sections {
+  display: inline;
+}
+
+.icon-box {
+  color: white;
+  background: #0059a8;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  line-height: 24px;
+  float: left;
+}
+
+.icon-subtitle {
+  background: white;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+}
+
+.contact-li {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.btn-color {
+  background: #0059a8;
+  color: white;
+}
+
+#contact-header-box {
+  padding-top: 38vh;
+  padding-right: 45vw;
+}
+
+#contact-image::before {
+  content: '';
+  display: block;
+  background-image: url('../images/classic-benz.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+#contact-image {
+  height: 75vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+#info-box {
+  background: #eee;
+  padding: 15px;
+  width: 35vw;
+  height: 75vh;
+}
+
+#map-container {
+  background-color: rgba(229, 227, 223, 1);
+  position: relative;
+  padding: 0;
+  margin-left: -1.2vw;
+  height: 400px;
+  width: 100vw;
+  filter: grayscale(1);
+}
+  
