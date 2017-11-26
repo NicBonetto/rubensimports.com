@@ -12,6 +12,7 @@
     "dev": "yarn webpack && yarn server"
   },
   "dependencies": {
+    "google-maps-react": "^1.1.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-redux": "^5.0.6",
