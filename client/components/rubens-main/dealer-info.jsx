@@ -62,9 +62,15 @@ class DealerInfo extends Component {
                 <ul>
                   <li className="contact-li">
                     <span>Monday - Friday:</span>
+                    <span className="pull-right">7:30am - 6:00pm</span>
                   </li>
                   <li className="contact-li">
                     <span>Saturday:</span>
+                    <span className="pull-right">7:30am - 3:00pm</span>
+                  </li>
+                  <li>
+                    <span>Sunday:</span>
+                    <span className="pull-right">Closed</span>
                   </li>
                 </ul>
               </div>
