@@ -9,7 +9,7 @@ git clone https://github.com/NicBonetto/rubensimports.com.git
 cd rubensimports.com/
 yarn install
 ```
-After all dependencies are installed, there are a few environmental variables you have to initialize on your own: PORT, EMAILPASSWORD, and EMAILUSER.
+After all dependencies are installed, there are a few environmental variables you have to initialize on your own: PORT, EMAILPASSWORD, and EMAILUSER. EMAILPASSWORD and EMAILUSER are used to set up a SMTP server to send emails from for the contact forms.
 
 ```
 yarn dev
