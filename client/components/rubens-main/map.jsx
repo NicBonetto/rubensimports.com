@@ -7,7 +7,8 @@ class Location extends Component {
       <div id="map-container">
         <Map
           google={this.props.google}
-          zoom={15}
+          zoom={14}
+          scrollwheel={false}
           initialCenter={{
             lat: 33.466641,
             lng: -117.702547
