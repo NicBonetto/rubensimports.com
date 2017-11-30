@@ -5,7 +5,7 @@ A website for Ruben's Imports. A car dealership located in Dana Point, CA.
 This application uses Git, Go, and yarn, so ensure they are installed. Then follow these command prompts:
 
 ```
-git clone
+git clone https://github.com/NicBonetto/rubensimports.com.git
 cd rubensimports.com/
 yarn install
 ```
